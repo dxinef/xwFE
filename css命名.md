@@ -52,11 +52,11 @@
  
 **举例：**
 
->  .page-index {...}  
->  .popbox-userInfo {...}  
->  .popbox-userInfo.is-hidden {...}  
->  .popbox-userInfo__btn-submit {...}  
->  .popbox-userInfo__btn-submit.is-disabled {...}
+    .page-index {...}  
+    .popbox-userInfo {...}  
+    .popbox-userInfo.is-hidden {...}  
+    .popbox-userInfo__btn-submit {...}  
+    .popbox-userInfo__btn-submit.is-disabled {...}
 
 
 ###公用组件定义###
@@ -67,13 +67,13 @@
 
 **举例：**
 
-> .btn {...}  
-> .btn-big {...}   
-> .btn-small {...}   
-> .btn-blue {...}  
-> .btn-red {...}  
-> ...  
-> .popbox-userInfo__btn-submit {...}  
-> .popbox-userInfo__btn-submit.is-disabled {...}  
-> ...  
->  `<div class="btn btn-big btn-blue popbox-userInfo__btn-submit is-disabled">`
+    .btn {...}  
+    .btn-big {...}   
+    .btn-small {...}   
+    .btn-blue {...}  
+    .btn-red {...}  
+    ...  
+    .popbox-userInfo__btn-submit {...}  
+    .popbox-userInfo__btn-submit.is-disabled {...}  
+    ...  
+    `<div class="btn btn-big btn-blue popbox-userInfo__btn-submit is-disabled">`
