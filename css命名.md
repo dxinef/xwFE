@@ -16,6 +16,7 @@
 3、名称可为1级或多层组成，最多不超过3级，多层级命名使用连字符（中横线）连接；
 
 ###名词与通用规范###
+
 **模块：**
 
 .moduleName-subName ；
@@ -65,13 +66,16 @@
     .popbox-userInfo.is-hidden {...}  
     .popbox-userInfo__btn-submit {...}  
     .popbox-userInfo__btn-submit.is-disabled {...}
+    .popbox-userInfo__btn-submit.in-page-help {...}
 
 
 ###公用组件定义###
 
 如按钮、表单控件等，可预先定义样式；
 
-具体应用时，可进行特异覆盖；
+需要在模块内覆盖默认样式的，可加上独立的命名（使用规范命名方式，不可.name.in-parentModule方式）；
+
+应用时，应先引入公用组件名，再使用自身独立命名；
 
 **举例：**
 
