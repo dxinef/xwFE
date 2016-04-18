@@ -19,7 +19,7 @@
 
 **模块：**
 
-.moduleName-subName ；
+.moduleName-subName
  
 逻辑上和功能上相互独立的可复用的组成部分；
  
@@ -41,7 +41,7 @@
  
 **状态：**
 
- .is-status ；
+ .is-status
  
  以is-为前缀；
  
@@ -49,11 +49,17 @@
 
 **位置：**
 
- .in-position;  
- .in-page;  
- .in-parentModule;
+ .in-position  
+ .in-page  
+ .in-parentModule
 
   定义模块或者元素在位于某个特定位置、从属于某个页面或者某个父模块时的特定展现样式；
+
+**序列：**
+
+ .name-1
+
+ 使用中横线加数字为后缀；
  
 **动态添加：**
 
@@ -65,6 +71,7 @@
     .popbox-userInfo {...}  
     .popbox-userInfo.is-hidden {...}  
     .popbox-userInfo__btn-submit {...}  
+    .popbox-userInfo__btn-submit-2 {...}  
     .popbox-userInfo__btn-submit.is-disabled {...}
     .popbox-userInfo__btn-submit.in-page-help {...}
 
@@ -73,7 +80,7 @@
 
 如按钮、表单控件等，可预先定义样式；
 
-需要在模块内覆盖默认样式的，可加上独立的命名（使用规范命名方式，不可.name.in-parentModule方式）；
+需要在模块内覆盖默认样式的，可加上独立的命名（使用规范命名方式）；
 
 应用时，应先引入公用组件名，再使用自身独立命名；
 
