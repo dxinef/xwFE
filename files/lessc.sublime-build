@@ -1,0 +1,70 @@
+{
+    "cmd": [
+        "lessc", 
+        "$file", 
+        "${file_path}/${file_base_name}.css",
+        "-x", 
+        "--autoprefix", 
+        "--source-map", 
+        "--verbose"
+    ],
+    "file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
+    "selector": "source.less",
+
+    "windows":  {
+        "cmd": [
+            "lessc.cmd",
+            "$file",
+            "${file_base_name}.css",
+            "-x",
+            "--source-map",
+            "--autoprefix",
+            "--verbose"
+        ]
+    },
+    "osx" : {
+        "cmd": [
+            "lessc",
+            "$file",
+            "${file_base_name}.css",
+            "-x",
+            "--source-map",
+            "--autoprefix",
+            "--verbose"
+        ]
+    },
+
+    "variants": [
+        {
+            "name": "No Compress",
+            "cmd": [
+                "lessc",
+                "$file",
+                "${file_path}/${file_base_name}.css",
+                "--source-map",
+                "--autoprefix",
+                "--verbose"
+            ],
+            "windows": {
+                "cmd": [
+                    "lessc.cmd",
+                    "$file",
+                    "${file_base_name}.css",
+                    "--source-map",
+                    "--autoprefix",
+                    "--verbose"
+                ]
+            },
+            "osx": {
+                "cmd": [
+                    "lessc",
+                    "$file",
+                    "${file_base_name}.css",
+                    "--source-map",
+                    "--autoprefix",
+                    "--verbose"
+                ]
+            }
+        }
+    ]
+}
