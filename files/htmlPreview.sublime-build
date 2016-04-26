@@ -1,0 +1,18 @@
+{
+	"selector": "text.html",
+	"cmd" : ["explorer.exe","$file"],
+	"variants": [
+		{
+			"name" : "chrome",
+			"shell_cmd" : "start chrome \"$file\""
+		},
+		{
+			"name" : "firefox",
+			"shell_cmd" : "start firefox \"$file\""
+		},
+		{
+			"name" : "ie",
+			"shell_cmd" : "start iexplore \"$file\""
+		}
+	]
+}
